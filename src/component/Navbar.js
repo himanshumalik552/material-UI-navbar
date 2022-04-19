@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "white",
     fontSize: "20px",
-    marginLeft: theme.spacing(20),
+    marginLeft: theme.spacing(5),
     "&:hover": {
       color: "yellow",
       borderBottom: "1px solid white",
@@ -43,7 +43,6 @@ function Navbar() {
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
           Navbar
-          
         </Typography>
         {isMobile ? (
           <DrawerComponent />
@@ -61,6 +60,7 @@ function Navbar() {
             <Link to="/faq" className={classes.link}>
               FAQ
             </Link>
+     
           </div>
         )}
       </Toolbar>
